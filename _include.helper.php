@@ -21,7 +21,7 @@ class GlobalHelper {
     public function __construct() {
 
         // Get settings from config.ini file
-        $this->SETTINGS_PRIVATE = parse_ini_file('../php_config/config.ini', true);
+        $this->SETTINGS_PRIVATE = parse_ini_file('/var/www/php_config/config.ini', true);
 
         // Get MySQL server host
         $this->SETTINGS_MYSQL_HOST = $this->SETTINGS_PRIVATE['mysql']['host'];
